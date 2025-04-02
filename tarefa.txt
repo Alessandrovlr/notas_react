@@ -1,0 +1,129 @@
+# 💻 Desafio Final - React Básico: Lista de Tarefas com Interatividade
+
+## 🎯 Objetivo Geral
+
+Criar uma **mini aplicação de Lista de Tarefas (To-Do List)** utilizando apenas **React e JavaScript puro**, sem bibliotecas externas. O desafio é dividido em três níveis (Fácil, Intermediário, Avançado), cada um construindo sobre o anterior.
+
+---
+
+## 🛠 Tecnologias Permitidas
+
+- React (Componentes, useState, Props)
+- JavaScript
+- HTML/CSS (opcional para estilização)
+- Sem bibliotecas de terceiros (ex: nada de Redux, Tailwind, etc.)
+
+---
+
+## 🟢 Nível 1 – Fácil: Estrutura Básica da Lista
+
+### ✅ Requisitos
+
+- Criar o componente principal `App`
+- Criar um input + botão para adicionar tarefas
+- Criar um componente `TaskList` que recebe as tarefas como props
+- Criar um componente `TaskItem` que exibe o nome da tarefa
+
+### 🧠 Conceitos Envolvidos
+
+- Componentes
+- Props
+- useState (estado local)
+
+---
+
+## 🟡 Nível 2 – Intermediário: Marcar e Remover Tarefas
+
+### ✅ Requisitos
+
+- Marcar tarefa como "concluída" (checkbox)
+- Remover tarefa da lista (botão de deletar)
+- Mostrar contador de tarefas pendentes
+- Utilizar `children` para customizar botões ou elementos
+
+### 💡 Dica
+
+- Use `className` condicional para aplicar estilos diferentes às tarefas concluídas
+
+### 🧠 Conceitos Envolvidos
+
+- `useState` + manipulação de eventos
+- Elevação de estado (lifting state up)
+- Children
+- Comunicação entre componentes via props
+
+---
+
+## 🔴 Nível 3 – Avançado: Filtros e Prop Drilling
+
+### ✅ Requisitos
+
+- Criar um componente `FilterBar` com os filtros:
+  - Todas
+  - Pendentes
+  - Concluídas
+- Adicionar o estado dos filtros no `App`
+- Filtrar as tarefas antes de passá-las ao `TaskList`
+- Passar props por vários níveis (App → FilterBar → TaskList → TaskItem)
+
+### 🧠 Conceitos Envolvidos
+
+- Prop Drilling
+- Estado compartilhado
+- Filtros + renderização condicional
+
+---
+
+
+
+## Prototipação
+
+ - Entregar a uma prototipação da aplicação.  ( Entregar no README do github)
+
+
+
+## Desafio Extra 
+
+
+
+## ✨ Etapa Extra (Bônus) – Para se destacar no pitch
+
+Esses itens são **opcionais**, mas contam pontos no pitch final:
+
+### 🎁 Requisitos Bônus
+
+- 💾 **Persistência com localStorage**
+  - Tarefas salvas continuam mesmo após atualizar a página
+  
+- 🌙 **Modo Claro/Escuro (Dark Mode)**
+  - Botão que alterna o tema do app
+  
+- ⏱️ **Timer de Foco (Estilo Pomodoro)**
+  - Botão que inicia um contador regressivo de 25min
+  - Pode ser apenas visual, sem bloqueio de interface
+
+---
+
+## 🧑‍🏫 Pitch Final – Apresentação dos Projetos
+
+Os alunos terá **5 minutos** para apresentar sua aplicação:
+
+### O que devem abordar:
+- Nome do aluno
+- O que conseguiram implementar (níveis + bônus, se houver)
+- Um ponto de dificuldade e como superaram
+- Demonstração do app funcionando
+- (Opcional) O que fariam se tivessem mais tempo?
+- o link do github trabalhando com branchs separadas (github flow)
+
+🎤 *Dica: apresentem como se fosse uma startup mostrando o MVP!*
+
+---
+
+
+---
+
+
+
+## 🗂 Estrutura Sugerida de Componentes
+
