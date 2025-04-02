@@ -7,8 +7,9 @@ const InputTask = (props) => {
     const adicionarTarefa = () => {
         if (task.trim() === "") return; 
 
-        props.setArrayTask(prevTasks => [...prevTasks, task]); 
-        console.log([...props.arrayTask, task]); 
+        if(!props.arrayTask.includes(task)){
+            props.setArrayTask(prevTasks => [...prevTasks, task]);
+        }
 
         setTask("");
     };
