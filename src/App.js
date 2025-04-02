@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react';
+import InputTask from './components/inputTarefa/inputBotao';
+import TaskList from './components/taskList/taskLista';
+
 
 function App() {
+
+  const [arrayTask, setArrayTask] = useState([]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <InputTask setArrayTask={setArrayTask} arrayTask={arrayTask}/>
+      <TaskList arrayTask={arrayTask}></TaskList>
     </div>
   );
 }
