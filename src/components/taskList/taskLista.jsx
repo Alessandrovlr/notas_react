@@ -1,12 +1,21 @@
 import React from "react";
 import CheckBox from "../checkBox/check";
+import DeletaBotao from "../delBotao/botao";
 
-
-const TaskList = (props) => {
+const TaskList = ({ tarefas, toggleTarefa, removerTarefa }) => {
     return (
         <div>
-            {props.arrayTask.map((item, index) =>(
-                <div key={index}><CheckBox label={"tarefa concludida!"}/>{item}</div>
+            {tarefas.map((tarefa, index) => (
+                <div key={index}>
+                    <CheckBox
+                        checked={tarefa.concluida}
+                        onToggle={() => toggleTarefa(index)}
+                    />
+                    <span style={{ textDecoration: tarefa.concluida ? "line-through" : "none" }}>
+                        {tarefa.titulo}
+                    </span>
+                    <DeletaBotao onDelete={() => removerTarefa(index)} />
+                </div>
             ))}
         </div>
     );

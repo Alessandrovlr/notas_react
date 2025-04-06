@@ -1,23 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 
-const CheckBox = ({ label }) => {
-    const [checked, setChecked] = useState(false);
-
-    const toggleCheck = () => {
-        setChecked(!checked);
-    };
-
+const CheckBox = ({ checked, onToggle }) => {
     return (
-        <div>
-            <label>
-                <input 
-                    type="checkbox" 
-                    checked={checked} 
-                    onChange={toggleCheck} 
-                />
-                {label}
-            </label>
-        </div>
+        <input
+            type="checkbox"
+            checked={checked}
+            onChange={onToggle}
+        />
     );
 };
 

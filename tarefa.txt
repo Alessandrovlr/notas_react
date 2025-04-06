@@ -19,10 +19,10 @@ Criar uma **mini aplicação de Lista de Tarefas (To-Do List)** utilizando apena
 
 ### ✅ Requisitos
 
-- Criar o componente principal `App`
-- Criar um input + botão para adicionar tarefas
-- Criar um componente `TaskList` que recebe as tarefas como props
-- Criar um componente `TaskItem` que exibe o nome da tarefa
+- Criar o componente principal `App`    ✅
+- Criar um input + botão para adicionar tarefas   ✅
+- Criar um componente `TaskList` que recebe as tarefas como props  ✅
+- Criar um componente `TaskItem` que exibe o nome da tarefa  ✅
 
 ### 🧠 Conceitos Envolvidos
 
@@ -36,10 +36,10 @@ Criar uma **mini aplicação de Lista de Tarefas (To-Do List)** utilizando apena
 
 ### ✅ Requisitos
 
-- Marcar tarefa como "concluída" (checkbox)
-- Remover tarefa da lista (botão de deletar)
-- Mostrar contador de tarefas pendentes
-- Utilizar `children` para customizar botões ou elementos
+- Marcar tarefa como "concluída" (checkbox) ✅
+- Remover tarefa da lista (botão de deletar) 
+- Mostrar contador de tarefas pendentes ✅
+- Utilizar `children` para customizar botões ou elementos ✅
 
 ### 💡 Dica
 
@@ -58,13 +58,13 @@ Criar uma **mini aplicação de Lista de Tarefas (To-Do List)** utilizando apena
 
 ### ✅ Requisitos
 
-- Criar um componente `FilterBar` com os filtros:
+- Criar um componente `FilterBar` com os filtros: ✅
   - Todas
   - Pendentes
   - Concluídas
-- Adicionar o estado dos filtros no `App`
-- Filtrar as tarefas antes de passá-las ao `TaskList`
-- Passar props por vários níveis (App → FilterBar → TaskList → TaskItem)
+- Adicionar o estado dos filtros no `App` ✅
+- Filtrar as tarefas antes de passá-las ao `TaskList` ✅
+- Passar props por vários níveis (App → FilterBar → TaskList → TaskItem) ✅
 
 ### 🧠 Conceitos Envolvidos
 
