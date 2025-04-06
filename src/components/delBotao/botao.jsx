@@ -1,8 +1,10 @@
 import React from "react";
+import "./delete.css";   
+
 
 const DeletaBotao = ({ onDelete }) => {
     return (
-        <button onClick={onDelete} style={{ marginLeft: "10px", color: "red" }}>
+        <button className="delete" onClick={onDelete} >
             deletar
         </button>
     );

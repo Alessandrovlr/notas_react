@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./inputStyle.css";
+import "./input.css";
 
 const InputTask = ({ adicionarTarefa }) => {
     const [task, setTask] = useState("");
@@ -18,7 +18,7 @@ const InputTask = ({ adicionarTarefa }) => {
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
             />
-            <button onClick={handleAdicionar}>Criar</button>
+            <button className="criar" onClick={handleAdicionar}>Criar</button>
         </div>
     );
 };

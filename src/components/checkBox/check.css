@@ -1,0 +1,13 @@
+.custom-checkbox
+{
+    width: 20px;
+    height: 20px;
+    accent-color: #10b981; 
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.custom-checkbox:hover
+{
+    transform: scale(1.1);
+}

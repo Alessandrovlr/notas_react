@@ -1,0 +1,66 @@
+.input input
+{
+    width: 200px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background-color: #2b2b2b;
+    color: white;
+    transition: border-color 0.2s ease;
+}
+
+.input input::placeholder
+{
+    color: #aaa;
+}
+
+.input button.criar
+{
+    padding: 8px 16px;
+    background-color: #10b981;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.input button.criar:hover
+{
+    background-color: rgb(19, 168, 94);
+}
+
+.input
+{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 40px;        
+    position: relative;       
+}
+
+.input input::placeholder
+{
+    color: #aaa;
+}
+
+
+.criar
+{
+    background-color: #10b981; 
+    color: white;
+    font-weight: 300;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.criar:hover
+{
+    background-color: #059669; 
+}
