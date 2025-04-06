@@ -4,6 +4,9 @@ Aplicação simples de lista de tarefas criada por **Kauã Klein** e **Alessandr
 
 ## 🚀 Tecnologias
 
+- React
+- Javascript
+- Css
 - Node.js
 - Nodemon
 
